@@ -36,7 +36,7 @@ const CreatePage = () => {
   return (
     <Container maxW={"container.sm"}>
       <VStack spacing={8}>
-        <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8}>
+        <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8} padding='10'>
           Create New Product
         </Heading>
 
@@ -63,7 +63,7 @@ const CreatePage = () => {
                 onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
               />
 
-              <Button colorScheme='blue' onClick={handleAddProduct} w='full'>
+              <Button colorScheme='yellow' onClick={handleAddProduct} w='full'>
                 Add Product
               </Button>
             </VStack>
