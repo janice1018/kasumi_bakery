@@ -1,4 +1,4 @@
-import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
+import { DeleteIcon, EditIcon,  } from "@chakra-ui/icons";
 import {
 	Box,
 	Button,
@@ -20,8 +20,10 @@ import {
 	useToast,
 	VStack,
 } from "@chakra-ui/react";
+import { SlInfo } from "react-icons/sl";
 import { useProductStore } from "../store/product";
 import { useState } from "react";
+
 
 const ProductCard = ({ product }) => {
 	const [updatedProduct, setUpdatedProduct] = useState(product);
@@ -31,7 +33,8 @@ const ProductCard = ({ product }) => {
 
 	const { deleteProduct, updateProduct } = useProductStore();
 	const toast = useToast();
-	const { isOpen, onOpen, onClose } = useDisclosure();
+	const { isOpen: isUpdateOpen, onOpen: onUpdateOpen, onClose: onUpdateClose } = useDisclosure();
+	const { isOpen: isInfoOpen, onOpen: onInfoOpen, onClose: onInfoClose } = useDisclosure();
 
 	const handleDeleteProduct = async (pid) => {
 		const { success, message } = await deleteProduct(pid);
@@ -56,7 +59,7 @@ const ProductCard = ({ product }) => {
 
 	const handleUpdateProduct = async (pid, updatedProduct) => {
 		const { success, message } = await updateProduct(pid, updatedProduct);
-		onClose();
+		onUpdateClose();
 		if (!success) {
 			toast({
 				title: "Error",
@@ -97,16 +100,14 @@ const ProductCard = ({ product }) => {
 				</Text>
 
 				<HStack spacing={2}>
-					<IconButton icon={<EditIcon />} onClick={onOpen} colorScheme='yellow' />
-					<IconButton
-						icon={<DeleteIcon />}
-						onClick={() => handleDeleteProduct(product._id)}
-						colorScheme='red'
-					/>
+					<IconButton icon={<EditIcon />} onClick={onUpdateOpen} colorScheme='yellow' />
+					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="orange" />
+					
 				</HStack>
 			</Box>
 
-			<Modal isOpen={isOpen} onClose={onClose}>
+			{/* update product modal*/}
+			<Modal isOpen={isUpdateOpen} onClose={onUpdateClose}>
 				<ModalOverlay />
 
 				<ModalContent>
@@ -121,17 +122,34 @@ const ProductCard = ({ product }) => {
 								onChange={(e) => setUpdatedProduct({ ...updatedProduct, name: e.target.value })}
 							/>
 							<Input
-								placeholder='Price'
-								name='price'
-								type='number'
-								value={updatedProduct.price}
-								onChange={(e) => setUpdatedProduct({ ...updatedProduct, price: e.target.value })}
+								placeholder='Description'
+								name='info'
+								value={updatedProduct.info}
+								onChange={(e) => setUpdatedProduct({ ...updatedProduct, info: e.target.value })}
 							/>
 							<Input
 								placeholder='Image URL'
 								name='image'
 								value={updatedProduct.image}
 								onChange={(e) => setUpdatedProduct({ ...updatedProduct, image: e.target.value })}
+							/>
+							<Input
+								placeholder='Allergens'
+								name='allergens'
+								value={updatedProduct.allergens}
+								onChange={(e) => setUpdatedProduct({ ...updatedProduct, allergens: e.target.value })}
+							/>
+							<Input
+								placeholder='Cake Size'
+								name='productSize'
+								value={updatedProduct.productSize}
+								onChange={(e) => setUpdatedProduct({ ...updatedProduct, productSize: e.target.value })}
+							/>
+							<Input
+								placeholder='Vegetarian (Yes / No)'
+								name='vegetarian'
+								value={updatedProduct.vegetarian}
+								onChange={(e) => setUpdatedProduct({ ...updatedProduct, vegetarian: e.target.value })}
 							/>
 						</VStack>
 					</ModalBody>
@@ -144,13 +162,42 @@ const ProductCard = ({ product }) => {
 						>
 							Update
 						</Button>
-						<Button variant='ghost' onClick={onClose}>
+						<Button variant='ghost' onClick={onUpdateClose}>
 							Cancel
 						</Button>
 					</ModalFooter>
 				</ModalContent>
 			</Modal>
+
+
+			{/* more info modal*/}
+			<Modal isOpen={isInfoOpen} onClose={onInfoClose}>
+				
+			  <ModalOverlay />
+			  <ModalContent>
+				<ModalHeader>Information</ModalHeader>
+				<ModalCloseButton />
+				<ModalBody>
+				<VStack spacing={4}>
+					<Text> {product.name}</Text>
+					<Text> {product.info}</Text>
+					<Text>Allergens: {product.allergens}</Text>
+					<Text>Size: {product.productSize}</Text>
+					<Text>Vegetarian: {product.vegetarian}</Text>
+				</VStack>
+				</ModalBody>
+	  
+				<ModalFooter>
+				  <Button colorScheme='yellow' mr={3} onClick={onInfoClose}>
+					Close
+				  </Button>
+				</ModalFooter>
+			  </ModalContent>
+			</Modal>
+		  
 		</Box>
 	);
+
+
 };
 export default ProductCard;
