@@ -6,11 +6,24 @@ const productSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        price: {
-            type: Number,
+        info: {
+            type: String,
             required: true,
         },
         image: {
+            type: String,
+            required: true,
+        },
+        allergens: {
+            type: String,
+            required: true,
+
+        },
+        productSize: {
+            type: String,
+            required: true,
+        },
+        vegetarian: {
             type: String,
             required: true,
         },
