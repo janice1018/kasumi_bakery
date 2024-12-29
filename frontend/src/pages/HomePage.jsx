@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
 
+
+
 const HomePage = () => {
 	const { fetchProducts, products } = useProductStore();
+	
+
 
 	useEffect(() => {
 		fetchProducts();
@@ -21,7 +25,7 @@ const HomePage = () => {
 			<VStack spacing={5}>
 			    <Text
 					
-					fontSize="12"
+					fontSize="13"
 					fontWeight="100"
 					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
 					bgClip={"text"}
