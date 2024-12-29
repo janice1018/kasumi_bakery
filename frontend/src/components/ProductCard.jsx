@@ -25,6 +25,8 @@ import { useProductStore } from "../store/product";
 import { useState } from "react";
 
 
+
+
 const ProductCard = ({ product }) => {
 	const [updatedProduct, setUpdatedProduct] = useState(product);
 
@@ -175,15 +177,19 @@ const ProductCard = ({ product }) => {
 				
 			  <ModalOverlay />
 			  <ModalContent>
-				<ModalHeader>Information</ModalHeader>
+				<ModalHeader color={textColor} align='center' >♥︎ Information ♥︎</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>
+					
 				<VStack spacing={4}>
-					<Text> {product.name}</Text>
-					<Text> {product.info}</Text>
-					<Text>Allergens: {product.allergens}</Text>
-					<Text>Size: {product.productSize}</Text>
-					<Text>Vegetarian: {product.vegetarian}</Text>
+					
+				    <Image src={product.image} alt={product.name} h='full' w='full'
+					       objectFit='cover'  border="2px" borderColor="#9D7252" rounded="d" />
+					<Text  fontSize='l' align='center' color={textColor} > ♥︎ {product.name} ♥︎</Text>
+					<Text fontSize='xs' align='center' color={textColor}> {product.info}</Text>
+					<Text fontSize='xs' color={textColor}>Allergens: {product.allergens}</Text>
+					<Text fontSize='xs' color={textColor}>Size: {product.productSize}</Text>
+					<Text fontSize='xs' color={textColor}>Vegetarian: {product.vegetarian}</Text>
 				</VStack>
 				</ModalBody>
 	  
