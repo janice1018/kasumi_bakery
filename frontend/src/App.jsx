@@ -5,6 +5,7 @@ import CreatePage from "./pages/CreatePage";
 import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
 import Navbar from "./components/Navbar";
+import BackToTop from "./components/BackToTop/BackToTop";
 
 function App() {
 	return (
@@ -15,8 +16,8 @@ function App() {
 				<Route path='/create' element={<CreatePage />} />
 				<Route path='/gallery' element={<GalleryPage />} />
 			</Routes>
+			<BackToTop/>
 		</Box>
 	);
 }
-
 export default App;

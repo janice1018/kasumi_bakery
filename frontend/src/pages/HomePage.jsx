@@ -1,15 +1,17 @@
-import { Container, SimpleGrid, Text, VStack } from "@chakra-ui/react";
+import { Container, SimpleGrid, Text, VStack, Box, Image } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop/BackToTop";
 
 
 
 const HomePage = () => {
 	const { fetchProducts, products } = useProductStore();
-	
 
+	
 
 	useEffect(() => {
 		fetchProducts();
@@ -44,6 +46,8 @@ const HomePage = () => {
 				>
 					⋆Menu⋆
 				</Text>
+
+				
 				<SimpleGrid
 					columns={{
 						base: 1,
@@ -58,7 +62,6 @@ const HomePage = () => {
 					))}
 				</SimpleGrid>
 				
-
 				{products.length === 0 && (
 					<Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
 						No products found 😢{" "}
@@ -68,8 +71,11 @@ const HomePage = () => {
 							</Text>
 						</Link>
 					</Text>
+
+					
 				)}
 			</VStack>
+			<Footer/>
 		</Container>
 	);
 };

@@ -65,6 +65,7 @@ const Navbar = () => {
 					</Link>
 					
 					
+					
 					<a href = 'https://www.instagram.com/bakeyourday.uk/' rel = "website" target = "_blank" >
 					
 					<Image src={instagramIcon} 
