@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
 import Navbar from "./components/Navbar";
 import BackToTop from "./components/BackToTop/BackToTop";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				<Route path='/gallery' element={<GalleryPage />} />
 			</Routes>
 			<BackToTop/>
+			<Footer/>
 		</Box>
 	);
 }

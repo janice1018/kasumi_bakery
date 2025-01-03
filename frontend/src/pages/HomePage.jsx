@@ -3,8 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
-import Footer from "../components/Footer";
-import BackToTop from "../components/BackToTop/BackToTop";
+
 
 
 
@@ -75,7 +74,7 @@ const HomePage = () => {
 					
 				)}
 			</VStack>
-			<Footer/>
+			
 		</Container>
 	);
 };
