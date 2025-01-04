@@ -52,15 +52,22 @@ const Navbar = () => {
 					<Link to={"/menu"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Menu
-							
 						</Button>
 					</Link>
+
+					<Link to={"/aboutus"}>
+						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
+							About Us
+						</Button>
+					</Link>
+					
 					<Link to={"/create"}>
-						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>
+					<Button variant="ghost" size={{ base: "xs", lg: "md" }}>   
 							Create 
 							<RiHeartAdd2Line fontSize={20} color={"brown"} />
 						</Button>
 					</Link>
+
 					<Link to={"/gallery"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Gallery
