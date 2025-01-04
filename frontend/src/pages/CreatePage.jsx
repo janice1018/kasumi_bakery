@@ -2,6 +2,9 @@ import { Box, Container, VStack, Heading, useColorModeValue, Input, Button, useT
 import { useState } from "react";
 import { useProductStore } from "../store/product";
 import { set } from "mongoose";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 const CreatePage = () => {
   const [newProduct, setNewProduct] = useState({
@@ -34,7 +37,8 @@ const CreatePage = () => {
   };
 
   return (
-    <Container maxW={"container.sm"}>
+    <Container maxW={"container.lg"}>
+      <Navbar/>
       <VStack spacing={8}>
         <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8} padding='10'>
           Create New Product
@@ -69,6 +73,7 @@ const CreatePage = () => {
             </VStack>
           </Box>
         </VStack>
+        <Footer/>
       </Container>
     );
 };
