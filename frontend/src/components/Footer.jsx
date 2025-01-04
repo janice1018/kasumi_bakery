@@ -17,14 +17,12 @@ const Footer = () => (
 
         <Link to={"/"}>   
         <Image src={logo} 
-						boxSize="300px"
+						boxSize={{ base: "150px", lg: "300px" }}
 						borderRadius="full"
 						fit="cover"
 						display={"block"}
 						margin={"auto"}
 						alt="Bake Your Day Instagram"
-            pt='20px'
-            
 						/>  
         </Link>
   
@@ -37,13 +35,13 @@ const Footer = () => (
                 sm: "row",
               }}>
 
-        <VStack padding='15' 
+        <VStack padding='10' 
           maxW={"1140px"} 
           divider={<StackDivider borderColor='gray.200' />}
           align='stretch'
-          pt='20'>
+          pt='10'>
          
-              <Link to={"/"}>
+              <Link to={"/menu"}>
                 <Button color="#834D1E" variant="Subtle" >
                   ♥︎ Menu 
                 </Button>
