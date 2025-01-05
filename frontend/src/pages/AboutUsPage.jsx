@@ -3,31 +3,15 @@ import orange_flower from "/orange_flower.jpg"
 import { RiImageCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "../images/main_logo.jpg";
-
-
-
-
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const HomePage = () => {
 	const logo_text = "Why Kasumi?\n\nKasumi (霞草) translates to Gypsophila (滿天星), which is a type of flower.\n I am particularly fond of the flower language associated with orange gypsophila.\n\n The flower language for Orange Gypsophila (橙色滿天星花) symbolizes a joyful, blessing and encouraging sentiment filled with warmth and positivity.\n\n Kasumi's mission is to spread this goodness to every patron."
 	return (
 		<Container maxW='container.2xl' py={18} >
-			<Link to={"/"}>   
-			    <Image src={logo} 
-				
-						boxSize={{ base: "150px", lg: "280px" }}
-						borderRadius="full"
-						fit="cover"
-						display={"block"}
-						margin={"auto"}
-						alt="Bake Your Day Instagram"
-						
-						>
-							
-
-				</Image>
-			</Link>
+			<Navbar/>
 
 			<Flex pt='10' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
@@ -39,14 +23,13 @@ const HomePage = () => {
 
 		        </Square>	   
 			</Flex>
-			<VStack 
-						maxW={"1140px"} 
-						divider={<StackDivider borderColor='gray.200' />}
-						align='center'
-						pt='50'>
-				  
-
-					</VStack>
+			    <VStack 
+					maxW={"1140px"} 
+					divider={<StackDivider borderColor='gray.200' />}
+					align='center'
+					pt='50'>
+				</VStack>
+			<Footer/>
 		</Container>
 	);
 };

@@ -49,7 +49,7 @@ const Navbar = () => {
 				</Text>
 
 				<HStack spacing={2} alignItems={"center"}>
-					<Link to={"/menu"}>
+					<Link to={"/customermenu"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Menu
 						</Button>
@@ -74,10 +74,14 @@ const Navbar = () => {
 						    <RiImageCircleLine fontSize={20} color={"brown"}/>
 							</Button>
 					</Link>
+
 					
 					
 					
-					<a href = 'https://www.instagram.com/bakeyourday.uk/' rel = "website" target = "_blank" >
+					
+					
+					
+					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
 					
 					<Image src={instagramIcon} 
 						boxSize="30px"
