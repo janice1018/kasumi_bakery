@@ -1,13 +1,13 @@
 import { Image, Container, VStack, SimpleGrid,Heading, HStack, Flex } from "@chakra-ui/react"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import gallery_picture_1 from "/gallery_picture_1.jpg"
-import gallery_picture_2 from "/gallery_picture_2.jpg"
-import gallery_picture_3 from "/gallery_picture_3.jpg"
-import gallery_picture_4 from "/gallery_picture_4.jpg"
-import gallery_picture_5 from "/gallery_picture_5.jpg"
-import gallery_picture_6 from "/gallery_picture_6.jpg"
-import gallery_picture_7 from "/gallery_picture_7.jpg"
+import gallery_picture_1 from "/gallery_pictures/gallery_picture_1.jpg"
+import gallery_picture_2 from "/gallery_pictures/gallery_picture_2.jpg"
+import gallery_picture_3 from "/gallery_pictures/gallery_picture_3.jpg"
+import gallery_picture_4 from "/gallery_pictures/gallery_picture_4.jpg"
+import gallery_picture_5 from "/gallery_pictures/gallery_picture_5.jpg"
+import gallery_picture_6 from "/gallery_pictures/gallery_picture_6.jpg"
+import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
 
 const GalleryPage = () => {
   
