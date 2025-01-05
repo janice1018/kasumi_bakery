@@ -74,10 +74,14 @@ const Navbar = () => {
 						    <RiImageCircleLine fontSize={20} color={"brown"}/>
 							</Button>
 					</Link>
+
 					
 					
 					
-					<a href = 'https://www.instagram.com/bakeyourday.uk/' rel = "website" target = "_blank" >
+					
+					
+					
+					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
 					
 					<Image src={instagramIcon} 
 						boxSize="30px"

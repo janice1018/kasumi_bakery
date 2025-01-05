@@ -56,7 +56,7 @@ const Footer = () => (
                 </Link>
 
             
-                <Link to={"/"}>
+                <Link to={"/aboutus"}>
                   <Button color="#834D1E" variant="Subtle" >
                     ♥︎ About Us  
                   </Button>
@@ -72,7 +72,7 @@ const Footer = () => (
           
 
           
-             <Link to={"https://www.instagram.com/bakeyourday.uk/"}>
+             <Link to={"https://www.instagram.com/kasumi.uk/"}>
                 <Button color="#834D1E" variant="solid">
                   <AiFillInstagram fontSize={20}  />
                   bakeyourday.uk  
