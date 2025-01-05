@@ -49,7 +49,7 @@ const Navbar = () => {
 				</Text>
 
 				<HStack spacing={2} alignItems={"center"}>
-					<Link to={"/customermenu"}>
+					<Link to={"/menu"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Menu
 						</Button>

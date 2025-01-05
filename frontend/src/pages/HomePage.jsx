@@ -44,7 +44,7 @@ const HomePage = () => {
 						divider={<StackDivider borderColor='gray.200' />}
 						align='center'
 						pt='50'>
-				   <Link to={"/customermenu"}>
+				   <Link to={"/menu"}>
 						<Button variant="outline" colorScheme='yellow' as='em' align={"center"}>  
 						♥︎Shop now
 							
