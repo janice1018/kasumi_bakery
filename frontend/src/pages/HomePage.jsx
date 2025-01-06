@@ -24,16 +24,17 @@ const HomePage = () => {
 				</Image>
 			</Link>
 
+			<Link to={"/menu"}>
+			    <Flex pt='10' spacing={20} direction='row'  >
+					<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }} >
+					<Text fontSize={{ base: "30px", lg: "80px" }} whiteSpace="pre-line" as='em'>{logo_text}</Text>
+					</Square>
 
-			<Flex pt='10' spacing={20} direction='row' >
-				<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
-			       <Text fontSize={{ base: "30px", lg: "80px" }} whiteSpace="pre-line" as='em'>{logo_text}</Text>
-		        </Square>
-
-				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>  
-				   <Image  boxSize={{ base: "250px", lg: "550px" }} objectFit='cover'  src={strawberry_cake} alt="strawberry cake" />
-		        </Square>	   
-			</Flex>
+					<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>  
+					<Image  boxSize={{ base: "250px", lg: "550px" }} objectFit='cover'  src={strawberry_cake} alt="strawberry cake" />
+					</Square>	   
+			    </Flex>
+			</Link>
 
 			<VStack 
 				maxW={"1140px"} 

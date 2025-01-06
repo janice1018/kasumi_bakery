@@ -54,17 +54,41 @@ const CreatePage = () => {
                 onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
               />
               <Input
-                placeholder='Price'
-                name='price'
-                type='number'
-                value={newProduct.price}
-                onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
+                placeholder='Description'
+                name='info'
+                value={newProduct.info}
+                onChange={(e) => setNewProduct({ ...newProduct, info: e.target.value })}
               />
               <Input
                 placeholder='Image URL'
                 name='image'
                 value={newProduct.image}
                 onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
+              />
+               <Input
+                placeholder='Allergens'
+                name='allergens'
+                value={newProduct.allergens}
+                onChange={(e) => setNewProduct({ ...newProduct, allergens: e.target.value })}
+              />
+               <Input
+                placeholder='Product Size'
+                name='productSize'
+                value={newProduct.productSize}
+                onChange={(e) => setNewProduct({ ...newProduct, productSize: e.target.value })}
+              />
+               <Input
+                placeholder='Vegetarian'
+                name='vegetarian'
+                value={newProduct.vegetarian}
+                onChange={(e) => setNewProduct({ ...newProduct, vegetarian: e.target.value })}
+              />
+              <Input
+                placeholder='Price'
+                name='price'
+                type='number'
+                value={newProduct.price}
+                onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
               />
 
               <Button colorScheme='yellow' onClick={handleAddProduct} w='full'>
