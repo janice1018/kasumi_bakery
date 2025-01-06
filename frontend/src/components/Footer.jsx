@@ -7,7 +7,7 @@ import logo from "../images/main_logo.jpg";
 
 
 const Footer = () => (
-    <Container maxW={"1140px"} px={4} >
+    <Container maxW={"1140px"} px={2} >
       <SimpleGrid
         borderTopWidth={2}
         mt="60px"
@@ -17,7 +17,7 @@ const Footer = () => (
 
         <Link to={"/"}>   
         <Image src={logo} 
-						boxSize={{ base: "150px", lg: "300px" }}
+						boxSize={{ base: "100px", lg: "120px" }}
 						borderRadius="full"
 						fit="cover"
 						display={"block"}
@@ -27,19 +27,19 @@ const Footer = () => (
         </Link>
   
          <Flex
-              h={16}
+              h={60}
               alignItems={"center"}
               justifyContent={"space-between"}
               flexDir={{
-                base: "column",
+                base: "row",
                 sm: "row",
               }}>
 
         <VStack padding='10' 
-          maxW={"1140px"} 
-          divider={<StackDivider borderColor='gray.200' />}
-          align='stretch'
-          pt='10'>
+                maxW={"1140px"} 
+                divider={<StackDivider borderColor='gray.200' />}
+                align='stretch'
+                pt='10'>
          
               <Link to={"/menu"}>
                 <Button color="#834D1E" variant="Subtle" >
@@ -57,15 +57,15 @@ const Footer = () => (
 
             
                 <Link to={"/aboutus"}>
-                  <Button color="#834D1E" variant="Subtle" >
+                  <Button color="#834D1E" variant="Subtle">
                     ♥︎ About Us  
                   </Button>
                 </Link>
        
 
            
-                <Link to={"/"}> 
-                <Button color="#834D1E" variant="Subtle" >
+                <Link to={"/contactus"}> 
+                <Button color="#834D1E" variant="Subtle">
                   ♥︎ Contact Us
                 </Button>
                 </Link>

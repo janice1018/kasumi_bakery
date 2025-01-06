@@ -1,6 +1,9 @@
 import { Image, Container, VStack, SimpleGrid,Heading, HStack, Flex } from "@chakra-ui/react"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Marquee from "react-fast-marquee";
+import cakeData from "../data/cakeData.js"
+import cakeImage from "../utils/cakeImage.js"
 import gallery_picture_1 from "/gallery_pictures/gallery_picture_1.jpg"
 import gallery_picture_2 from "/gallery_pictures/gallery_picture_2.jpg"
 import gallery_picture_3 from "/gallery_pictures/gallery_picture_3.jpg"
@@ -9,13 +12,15 @@ import gallery_picture_5 from "/gallery_pictures/gallery_picture_5.jpg"
 import gallery_picture_6 from "/gallery_pictures/gallery_picture_6.jpg"
 import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
 
+
+
 const GalleryPage = () => {
   
 	return (
 		<Container maxW='container.lg' py={12}>
 		<Navbar/>
 		  <Heading size={"xl"} pt="100px" letterSpacing={"8"} textAlign={"center"} mb={18} padding='9' color={"#9D7252"}>
-			Gallery 
+		  Gallery 
 		  </Heading>
 		   
 
@@ -28,15 +33,33 @@ const GalleryPage = () => {
 					spacing={10}
 					w={"full"} >
 
-				<Image borderRadius='full' src={gallery_picture_1} alt="gallery_picture_1" />
-				<Image rounded="md" src={gallery_picture_2} alt="gallery_picture_2" />
-				<Image borderRadius='full' src={gallery_picture_3} alt="gallery_picture_3" />
+				<Image rounded="md"  src={gallery_picture_1} alt="gallery_picture_1" />
+				<Image rounded="md"  src={gallery_picture_2} alt="gallery_picture_2" />
+				<Image rounded="md"  src={gallery_picture_3} alt="gallery_picture_3" />
 				<Image rounded="md" src={gallery_picture_5} alt="gallery_picture_5" />
 				<Image borderRadius='full' src={gallery_picture_6} alt="gallery_picture_6" />
 				<Image rounded="md" src={gallery_picture_7} alt="gallery_picture_7" />
 
 	          </SimpleGrid>
 	        </HStack>
+			
+			<Flex pt='20' spacing={20}>
+			    <Marquee radient={false} speed={40} pauseOnHover={true} pauseOnClick={true} 
+  					     delay={0} play={true} direction="left" loop={6} autoFill={true}  >
+
+				    {cakeData.map((cake, id) => (
+
+					<Image src={cakeImage(cake)} 
+						boxSize={{ base: "100px", lg: "160px" }}
+						borderRadius="full"
+						fit="cover"
+						display={"block"}
+						margin={"auto"}
+						alt={cake}
+					 />
+			        ))}
+				</Marquee>
+			</Flex>
 		<Footer/>
 	 </Container>
 	);

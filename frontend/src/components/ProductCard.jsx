@@ -102,8 +102,7 @@ const ProductCard = ({ product }) => {
 				</Text>
 
 				<HStack spacing={2}>
-					<IconButton icon={<EditIcon />} onClick={onUpdateOpen} colorScheme='yellow' />
-					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="orange" />
+					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="yellow" />
 					
 				</HStack>
 			</Box>

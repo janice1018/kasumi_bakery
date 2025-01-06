@@ -2,7 +2,8 @@ import { Box, useColorModeValue } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 import MenuPage from "./pages/MenuPage";
-import CustomerMenuPage from "./pages/CustomerMenuPage";
+import EditPage from "./pages/EditPage";
+import ContactUsPage from "./pages/ContactUsPage";
 import CreatePage from "./pages/CreatePage";
 import HomePage from "./pages/HomePage";
 import GalleryPage from "./pages/GalleryPage";
@@ -16,8 +17,9 @@ function App() {
 			<Routes>
 				<Route path='/' element={<HomePage />} />
 				<Route path='/aboutus' element={<AboutUsPage />} />
-				<Route path='/customermenu' element={<MenuPage />} />
-				<Route path='/menu' element={<CustomerMenuPage />} />
+				<Route path='/contactus' element={<ContactUsPage />} />
+				<Route path='/menu' element={<MenuPage />} />
+				<Route path='/edit' element={<EditPage />} />
 				<Route path='/create' element={<CreatePage />} />
 				<Route path='/gallery' element={<GalleryPage />} />
 			</Routes>
