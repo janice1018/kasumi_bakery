@@ -104,6 +104,10 @@ const NewProductCard = ({ product }) => {
 				<HStack spacing={2}>
 					<IconButton icon={<EditIcon />} onClick={onUpdateOpen} colorScheme='yellow' />
 					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="orange" />
+					<IconButton
+						icon={<DeleteIcon />}
+						onClick={() => handleDeleteProduct(product._id)}
+						colorScheme='red'/>
 					
 				</HStack>
 			</Box>

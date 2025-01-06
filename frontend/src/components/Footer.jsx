@@ -75,7 +75,7 @@ const Footer = () => (
              <Link to={"https://www.instagram.com/kasumi.uk/"}>
                 <Button color="#834D1E" variant="solid">
                   <AiFillInstagram fontSize={20}  />
-                  bakeyourday.uk  
+                  kasumi.uk  
                 </Button>
                 </Link>
           

@@ -20,37 +20,39 @@ const HomePage = () => {
 	products.sort(function (x, y){
 		return new Date(x.updatedAt) < new Date(y.updatedAt) ? 1 : -1;
 	})
-
+	const menu_text ="📍Birmingham UK \n\n⋆  Japanese style cakes  ⋆"
 	return (
     
-		<Container maxW='container.xl' py={12}>
+		<Container maxW='container.xl' py={12} >
           <Navbar/>
-			<VStack spacing={5}>
+			<VStack spacing={5}  >
 			    <Text
-					
-					fontSize="13"
-					fontWeight="100"
+					fontSize={{ base: "13px", lg: "20px" }} 
 					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
 					bgClip={"text"}
-          pt="10"
-				>			 
-					📍Birmingham UK📍
-					✨✨✨Japanese style cakes ✨✨✨
-					💫Food Hygiene and Safety Level 2
+					pt="2">			 
+					  {menu_text}
 				</Text>
+				<Text
+					fontSize={{ base: "13px", lg: "20px" }} 
+					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
+					bgClip={"text"}>			 
+				       ⋆Food Hygiene and Safety Level 2⋆
+				</Text>
+				
 				<Text
 					textDecoration="underline"
 					textDecorationColor="#9D7252"
 					fontSize="28"
 					fontWeight="100"
-					bgGradient={"linear(to-r, #9D7252, #9D7252)"}
+					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
 					bgClip={"text"}
-				>
-					⋆Menu⋆
+					>
+						
+					   ⋆Menu⋆
 				</Text>
-
 				
-				<SimpleGrid
+				<SimpleGrid   bg="#F1EBE6"
 					columns={{
 						base: 1,
 						md: 2,

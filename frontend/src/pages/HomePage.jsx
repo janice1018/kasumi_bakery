@@ -12,7 +12,7 @@ const HomePage = () => {
 	const logo_text = "All\n About\n Cake..."
 
 	return (
-		<Container maxW='container.2xl' py={18} >
+		<Container maxW='container.2xl' py={30}  bg="#F1EBE6">
 			<Link to={"/"}>   
 			    <Image  src={logo} 
 						boxSize={{ base: "150px", lg: "280px" }}
@@ -43,7 +43,7 @@ const HomePage = () => {
 				pt='50'>
 				   <Link to={"/menu"}>
 						<Button variant="outline" colorScheme='yellow' as='em' align={"center"}>  
-						♥︎  Start Now
+						♥︎  Shop Now
 						</Button>
 					</Link>
 			</VStack>

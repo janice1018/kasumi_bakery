@@ -17,14 +17,14 @@ import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
 const GalleryPage = () => {
   
 	return (
-		<Container maxW='container.lg' py={12}>
+		<Container maxW='container.lg' py={12} >
 		<Navbar/>
 		  <Heading size={"xl"} pt="100px" letterSpacing={"8"} textAlign={"center"} mb={18} padding='9' color={"#9D7252"}>
 		  Gallery 
 		  </Heading>
 		   
 
-            <HStack spacing={10} alignItems={"center"}>
+            <HStack spacing={10} alignItems={"center"} bg="#F1EBE6">
 	          <SimpleGrid columns={{
 						base: 3,
 						md: 2,
@@ -43,9 +43,9 @@ const GalleryPage = () => {
 	          </SimpleGrid>
 	        </HStack>
 			
-			<Flex pt='20' spacing={20}>
+			<Flex pt='20' spacing={20} >
 			    <Marquee radient={false} speed={40} pauseOnHover={true} pauseOnClick={true} 
-  					     delay={0} play={true} direction="left" loop={6} autoFill={true}  >
+  					     delay={0} play={true} direction="left" loop={6} autoFill={true}   >
 
 				    {cakeData.map((cake, id) => (
 
