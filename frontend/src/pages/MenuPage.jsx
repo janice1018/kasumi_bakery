@@ -24,7 +24,7 @@ const HomePage = () => {
 	return (
     
 		<Container maxW='container.xl' py={12}>
-      <Navbar/>
+          <Navbar/>
 			<VStack spacing={5}>
 			    <Text
 					

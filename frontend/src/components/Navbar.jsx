@@ -61,13 +61,6 @@ const Navbar = () => {
 						</Button>
 					</Link>
 
-					<Link to={"/create"}>
-					<Button variant="ghost" size={{ base: "xs", lg: "md" }}>   
-							Create 
-							<RiHeartAdd2Line fontSize={20} color={"brown"} />
-						</Button>
-					</Link>
-
 					<Link to={"/gallery"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Gallery
@@ -75,23 +68,22 @@ const Navbar = () => {
 							</Button>
 					</Link>
 
-					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
-					
-					<Image src={instagramIcon} 
-						boxSize="30px"
-						borderRadius="full"
-						fit="cover"
-						alt="Bake Your Day Instagram">
-					</Image>
-					
-					</a>
-					
 					<Link to={"/contactus"}>
 						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
 							Contact Us
 						</Button>
 					</Link>
 
+					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
+					
+					<Image src={instagramIcon} 
+						boxSize={{ base: "20px", lg: "30px" }}
+						borderRadius="full"
+						fit="cover"
+						alt="Bake Your Day Instagram">
+					</Image>
+					
+					</a>
 					
 				</HStack>
 			</Flex>
