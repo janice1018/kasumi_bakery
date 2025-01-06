@@ -60,7 +60,7 @@ const Navbar = () => {
 							About Us
 						</Button>
 					</Link>
-					
+
 					<Link to={"/create"}>
 					<Button variant="ghost" size={{ base: "xs", lg: "md" }}>   
 							Create 
@@ -75,12 +75,6 @@ const Navbar = () => {
 							</Button>
 					</Link>
 
-					
-					
-					
-					
-					
-					
 					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
 					
 					<Image src={instagramIcon} 
@@ -92,6 +86,11 @@ const Navbar = () => {
 					
 					</a>
 					
+					<Link to={"/contactus"}>
+						<Button variant="ghost" size={{ base: "xs", lg: "md" }}>  
+							Contact Us
+						</Button>
+					</Link>
 
 					
 				</HStack>

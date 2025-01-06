@@ -101,8 +101,9 @@ const NewProductCard = ({ product }) => {
                    £{product.price}
 				</Text>
 
-				<HStack spacing={2} >
-					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="yellow" />
+				<HStack spacing={2}>
+					<IconButton icon={<EditIcon />} onClick={onUpdateOpen} colorScheme='yellow' />
+					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="orange" />
 					
 				</HStack>
 			</Box>
@@ -192,7 +193,11 @@ const NewProductCard = ({ product }) => {
 				</VStack>
 				</ModalBody>
 	  
-				
+				<ModalFooter>
+				  <Button colorScheme='yellow' mr={3} onClick={onInfoClose}>
+					Close
+				  </Button>
+				</ModalFooter>
 			  </ModalContent>
 			</Modal>
 		  
