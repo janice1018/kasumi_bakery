@@ -7,7 +7,7 @@ import logo from "../images/main_logo.jpg";
 
 
 const Footer = () => (
-    <Container maxW={"1140px"} px={2} >
+    <Container maxW={"10xl"} px={2} >
       <SimpleGrid
         borderTopWidth={2}
         mt="60px"
@@ -27,13 +27,9 @@ const Footer = () => (
         </Link>
   
          <Flex
-              h={60}
               alignItems={"center"}
               justifyContent={"space-between"}
-              flexDir={{
-                base: "row",
-                sm: "row",
-              }}>
+              flexDir='column'>
 
         <VStack padding='10' 
                 maxW={"1140px"} 

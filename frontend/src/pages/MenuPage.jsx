@@ -23,9 +23,9 @@ const HomePage = () => {
 	const menu_text ="📍Birmingham UK \n\n⋆  Japanese style cakes  ⋆"
 	return (
     
-		<Container maxW='container.xl' py={12} >
+		<Container maxW='container.xl' >
           <Navbar/>
-			<VStack spacing={5}  >
+			<VStack spacing={5} pt={20} >
 			    <Text
 					fontSize={{ base: "13px", lg: "20px" }} 
 					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}

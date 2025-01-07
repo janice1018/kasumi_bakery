@@ -12,8 +12,8 @@ import BackToTop from "./components/BackToTop/BackToTop";
 
 
 function App() {
-	return (
-		<Box minH={"100vh"} bg={useColorModeValue("warmGray.500", "gray.900")}>
+    return (
+        <Box minH={"100vh"} bg={"#FCF9F3"}>
 			<Routes>
 				<Route path='/' element={<HomePage />} />
 				<Route path='/aboutus' element={<AboutUsPage />} />

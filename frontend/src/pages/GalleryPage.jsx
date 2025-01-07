@@ -17,7 +17,7 @@ import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
 const GalleryPage = () => {
   
 	return (
-		<Container maxW='container.lg' py={12} >
+		<Container maxW='container.xl' py={12} >
 		<Navbar/>
 		  <Heading size={"xl"} pt="100px" letterSpacing={"8"} textAlign={"center"} mb={18} padding='9' color={"#9D7252"}>
 		  Gallery 

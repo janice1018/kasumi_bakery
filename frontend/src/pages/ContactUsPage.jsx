@@ -8,31 +8,29 @@ import Footer from "../components/Footer";
 import Marquee from "react-fast-marquee";
 import cakeData from "../data/cakeData.js"
 import cakeImage from "../utils/cakeImage.js"
-import instagramIcon from "../images/instagram_icon.png"
+import { GrInstagram } from "react-icons/gr";
+
 
 
 const ContactUsPage = () => {
-	const logo_text = "♥︎Contact Us:\n\n  Instagram: kasumi.uk"
+	const logo_text = "♥︎Contact Us:\n\n"
 	return (
-		<Container maxW='container.2xl' py={18} >
+		<Container maxW='container.xl' py={18} color="#834D1E" >
 			<Navbar/>
 
 			<Flex pt='10' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
-			       <Text fontSize={{ base: "15px", lg: "30px" }} whiteSpace="pre-line" >{logo_text}</Text>
-                     <a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
-                     <VStack 
-                            maxW={"1140px"} 
-                            align='center'
-                            pt={{ base: "10", lg: "20" }}>
-                                <Image src={instagramIcon} 
-                                    boxSize="30px"
-                                    borderRadius="full"
-                                    alt="Bake Your Day Instagram">
-                                </Image>
-                    </VStack>
-					
-					 </a>
+			       <Text fontSize={{ base: "15px", lg: "30px" }} whiteSpace="pre-line" >
+					  {logo_text}
+						<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
+						    <Button size={{ base: "sm", lg: "lg" }}  variant='subtle' > 
+							   <GrInstagram />
+						    </Button> 
+						
+					Instagram: kasumi.uk
+					</a>
+					</Text>
+                 
 		        </Square>
 
 				<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
@@ -47,30 +45,7 @@ const ContactUsPage = () => {
 				pt='50'>
 			</VStack>
 
-			<Flex  spacing={20}>
-			    <Marquee 
-						gradient={{base: 'false', md: 'true', lg: 'true'}} 
-						speed={40}
-						pauseOnHover={true} 
-						pauseOnClick={true} 
-  					    delay={0} 
-						play={true} 
-						direction="left" 
-						autoFill={true} >
-
-				         {cakeData.map((cake, id) => (
-
-					    <Image src={cakeImage(cake)} 
-							boxSize={{ base: "100px", lg: "160px" }}
-							borderRadius="full"
-							fit="cover"
-							display={"block"}
-							margin={"auto"}
-							alt={cake}
-						/>
-			            ))}
-				</Marquee>
-			</Flex>
+		
 		  <Footer/>
 		</Container>
 	);

@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Text, Flex, HStack, VStack, Box, Image, Square, Button, StackDivider } from "@chakra-ui/react";
+import { Avatar, Center, Container, Heading, SimpleGrid, Text, Flex, HStack, VStack, Box, Image, Square, Button, StackDivider } from "@chakra-ui/react";
 import strawberry_cake from "/cake_pictures/strawberry_cake.jpeg"
 import { RiImageCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -6,26 +6,28 @@ import logo from "../images/main_logo.jpg";
 import Marquee from "react-fast-marquee";
 import cakeData from "../data/cakeData.js"
 import cakeImage from "../utils/cakeImage.js"
+import Navbar from "../components/Navbar";
 
 
 const HomePage = () => {
-	const logo_text = "All\n About\n Cake..."
+    const logo_text = "All\n About\n Cake..."
 
-	return (
-		<Container maxW='container.2xl' py={30}  bg="#F1EBE6">
-			<Link to={"/"}>   
-			    <Image  src={logo} 
-						boxSize={{ base: "150px", lg: "280px" }}
-						borderRadius="full"
-						fit="cover"
-						display={"block"}
-						margin={"auto"}
-						alt="Bake Your Day Instagram">
-				</Image>
-			</Link>
+    return (
+		
+        <Container maxW='container.xl' >
 
+			<Flex bg='#F2EEE8' alignContent={"center"} justifyContent={"center"}>
+		        <Center>
+                    <Link to={"/"}>   
+						<Avatar position="relative" top="5em" src={logo} boxSize={{ base: "150px", lg: "280px" }}
+									borderRadius="full"
+									alt="logo"
+                        />		
+			        </Link>
+			    </Center>
+            </Flex>	
 			<Link to={"/menu"}>
-			    <Flex pt='10' spacing={20} direction='row'  >
+			    <Flex pt={{ base: "40", lg: "40" }} spacing={20} direction='row'  >
 					<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }} >
 					<Text fontSize={{ base: "30px", lg: "80px" }} whiteSpace="pre-line" as='em'>{logo_text}</Text>
 					</Square>
@@ -37,35 +39,20 @@ const HomePage = () => {
 			</Link>
 
 			<VStack 
-				maxW={"1140px"} 
-				divider={<StackDivider borderColor='gray.200' />}
-				align='center'
-				pt='50'>
+				
+				divider={<StackDivider borderColor='gray.800' />}
+				alignContent={"center"} justifyContent={"center"}
+				pt='50'
+				pb='20'
+				>
+				<Center>
 				   <Link to={"/menu"}>
-						<Button variant="outline" colorScheme='yellow' as='em' align={"center"}>  
+						<Button variant="outline">  
 						♥︎  Shop Now
 						</Button>
 					</Link>
+					</Center>
 			</VStack>
-			
-			<Flex pt='20' spacing={20}>
-			    <Marquee speed={40} pauseOnHover='true' pauseOnClick='true' 
-  					 delay={0} play='true' direction="left" loop={6} autoFill='true'>
-
-					{cakeData.map((cake, id) => (
-
-					<Image key={id} src={cakeImage(cake)} 
-						boxSize={{ base: "100px", lg: "160px" }}
-						borderRadius="full"
-						fit="cover"
-						display={"block"}
-						margin={"auto"}
-						alt={cake}
-						 />
-
-					))}
-				</Marquee>
-			</Flex>	
 		</Container>
 	);
 };
