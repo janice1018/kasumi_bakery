@@ -11,9 +11,9 @@ import cakeImage from "../utils/cakeImage.js"
 
 
 const HomePage = () => {
-	const logo_text = "Why Kasumi?\n\nKasumi (霞草) translates to Gypsophila (滿天星), which is a type of flower. I am particularly fond of the flower language associated with orange gypsophila.\n\n The flower language for Orange Gypsophila (橙色滿天星花) symbolizes a joyful, blessing and encouraging sentiment filled with warmth and positivity.\n\n Kasumi's mission is to spread this goodness to every patron."
+	const logo_text = "Why Kasumi?\n\n\n\nKasumi (霞草) translates to Gypsophila (滿天星), which is a type of flower.\n\n I am particularly fond of the flower language associated with orange gypsophila.\n\n The flower language for Orange Gypsophila symbolizes a joyful, blessing and encouraging sentiment filled with warmth and positivity.\n\n Kasumi's mission is to spread this goodness to every patron."
 	return (
-		<Container maxW='container.2xl' py={18}  >
+		<Container maxW='container.xl' py={18}  >
 			<Navbar/>
 
 			<Flex pt='10' spacing={20} direction='row' >
