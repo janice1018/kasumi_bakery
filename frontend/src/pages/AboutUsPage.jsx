@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid, Text, Flex, HStack, VStack, Box, Image,
 import orange_flower from "/orange_flower.jpg"
 import { RiImageCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import logo from "../images/main_logo.jpg";
+import logo from "/main_logo.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Marquee from "react-fast-marquee";
@@ -33,7 +33,7 @@ const AboutUsPage = () => {
 				pt='50'>
 			</VStack>
 
-			<Flex  spacing={20}>
+			<Flex  spacing={20} bg="#FCF9F3" >
 			    <Marquee 
 						gradient={{base: 'false', md: 'true', lg: 'true'}} 
 						speed={40}
@@ -42,11 +42,12 @@ const AboutUsPage = () => {
   					    delay={0} 
 						play={true} 
 						direction="left" 
-						autoFill={true} >
+						autoFill={true}
+						>
 
 				         {cakeData.map((cake, id) => (
 
-					    <Image src={cakeImage(cake)} 
+					    <Image key={id} src={cakeImage(cake)} 
 							boxSize={{ base: "100px", lg: "160px" }}
 							borderRadius="full"
 							fit="cover"

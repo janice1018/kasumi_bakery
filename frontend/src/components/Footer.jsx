@@ -3,11 +3,11 @@ import { SlSocialInstagram } from "react-icons/sl";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-import logo from "../images/main_logo.jpg";
+import logo from "/main_logo.jpg";
 
 
 const Footer = () => (
-        <Container maxW='container.6xl' pt="20"  >
+        <Container maxW='container.6xl' pt="20">
             <Flex  alignContent={"center"} justifyContent={"center"} h={{ base: "10", lg: "20" }}>
                   <Center>
                       <Link to={"/"}>   
@@ -26,8 +26,9 @@ const Footer = () => (
               alignItems={"center"}
               justifyContent={"space-between"}
               flexDir='column'
-              padding='8'
+              padding={{ base: "0", lg: "8" }}
               bg='#F2EEE8' 
+              borderRadius="md"
               >
 
         <HStack  

@@ -10,6 +10,9 @@ import gallery_picture_3 from "/gallery_pictures/gallery_picture_3.jpg"
 import gallery_picture_5 from "/gallery_pictures/gallery_picture_5.jpg"
 import gallery_picture_6 from "/gallery_pictures/gallery_picture_6.jpg"
 import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
+import gallery_picture_8 from "/gallery_pictures/gallery_picture_8.jpg"
+import gallery_picture_9 from "/gallery_pictures/gallery_picture_9.jpg"
+import gallery_picture_10 from "/gallery_pictures/gallery_picture_10.jpg"
 
 import React from "react";
 import Slider from "react-slick";
@@ -30,7 +33,8 @@ const GalleryPage = () => {
 								>
 								⋆ Gallery ⋆
 						 </Text>
-					        	<Box  pt={{ base: "2", lg: "6" }} bg="#FDF6E9" w='60%' align="center" >
+					        	<Box  pt={{ base: "2", lg: "6" }} bg="#F2EEE8"
+								 w={{ base: "90%", lg: "40%" }} h="full" align="center" >
 							       <Slick  />
 								</Box>
 						<Footer/>

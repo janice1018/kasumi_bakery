@@ -2,7 +2,7 @@ import { Button, Avatar, Center, Container, Flex, HStack, Text, useColorMode, Im
 import { Link } from "react-router-dom";
 
 import { RiHeartAdd2Line } from "react-icons/ri";
-import logo from "../images/main_logo.jpg";
+import logo from "/main_logo.jpg";
 import instagramIcon from "../images/instagram_icon.png"
 import { RiImageCircleLine } from "react-icons/ri";
 import { GrInstagram } from "react-icons/gr";
@@ -18,9 +18,10 @@ const Navbar = () => {
 			<Flex bg='#F2EEE8' alignContent={"center"} borderRadius="md" justifyContent={"center"} h={{ base: "20", lg: "28" }}>
 		        <Center>
                     <Link to={"/"}>   
-						<Avatar position="relative" top={{ base: "2em", lg: "3em" }} src={logo} boxSize={{ base: "100px", lg: "180px" }}
-									borderRadius="full"
-									alt="logo"
+						<Avatar position="relative" top={{ base: "2em", lg: "3em" }} 
+								src={logo} boxSize={{ base: "100px", lg: "180px" }}
+								borderRadius="full"
+								alt="logo"
                         />		
 			        </Link>
 			    </Center>
