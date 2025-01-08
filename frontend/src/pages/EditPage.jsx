@@ -25,19 +25,8 @@ const HomePage = () => {
     
 		<Container maxW='container.xl' py={12}>
       <Navbar/>
-			<VStack spacing={5}>
-			    <Text
-					
-					fontSize="13"
-					fontWeight="100"
-					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
-					bgClip={"text"}
-                    pt="10"
-				>			 
-					📍Birmingham UK📍
-					✨✨✨Japanese style cakes ✨✨✨
-					💫Food Hygiene and Safety Level 2
-				</Text>
+			<VStack spacing={5} pt="10">
+			
 				<Text
 					textDecoration="underline"
 					textDecorationColor="#9D7252"

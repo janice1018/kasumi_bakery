@@ -40,17 +40,8 @@ const Navbar = () => {
 			    >
 
 				
-				<Text
-					fontSize={{ base: "13", lg: "20" }}
-					fontWeight={"1"}
-					textAlign={"left"}
-					bgGradient={"linear(to-r, #834D1E, #834D1E)"}
-					bgClip={"text"}
-					fontFamily={"'Yeseva One', system-ui;"}
-					letterSpacing={"8"}
-				>
-			        <Link to={"/"}> ♥︎ Bake Your Day ♥︎   </Link>
-				</Text>
+				<HStack>
+				</HStack>
 				
 			
 
@@ -80,7 +71,7 @@ const Navbar = () => {
 					</Link>
 
 					<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
-						    <Button size={{ base: "sm", lg: "lg" }}  variant='subtle' > 
+						    <Button size={{ base: "sm", lg: "lg" }}  variant='subtle' color="#834D1E"  > 
 							   <GrInstagram />
 						    </Button> 
 			

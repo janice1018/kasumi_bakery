@@ -26,11 +26,11 @@ const ContactUsPage = () => {
 						    <Button size={{ base: "sm", lg: "lg" }}  variant='subtle' > 
 							   <GrInstagram />
 						    </Button> 
-						
-					Instagram: kasumi.uk
-					</a>
+							Instagram: kasumi.uk
+							
+						</a>
 					</Text>
-                 
+						
 		        </Square>
 
 				<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>

@@ -12,7 +12,7 @@ import '@fontsource-variable/playfair-display';
 const theme = extendTheme({
   fonts: {
     heading: `'Playfair Display Variable', 'serif'`,
-    body: `'Yeseva One', 'system-ui'`,
+    body: `'Playfair Display Variable', 'serif'`,
   },
 })
 

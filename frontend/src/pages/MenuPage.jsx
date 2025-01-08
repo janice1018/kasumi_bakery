@@ -26,45 +26,33 @@ const HomePage = () => {
 		<Container maxW='container.xl' >
           <Navbar/>
 			<VStack spacing={5} pt={20} >
-			    <Text
-					fontSize={{ base: "13px", lg: "20px" }} 
-					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
-					bgClip={"text"}
-					pt="2">			 
-					  {menu_text}
-				</Text>
-				<Text
-					fontSize={{ base: "13px", lg: "20px" }} 
-					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
-					bgClip={"text"}>			 
-				       ⋆Food Hygiene and Safety Level 2⋆
-				</Text>
+			    
+			
 				
 				<Text
-					textDecoration="underline"
 					textDecorationColor="#9D7252"
-					fontSize="28"
+					fontSize={{ base:"20", lg:"28"}}
 					fontWeight="100"
-					bgGradient={"linear(to-r, #9D7252, #DFC5A4)"}
+					bgGradient={"linear(to-r, #9D7252, #9D7252)"}
 					bgClip={"text"}
 					>
-						
 					   ⋆Menu⋆
 				</Text>
 				
-				<SimpleGrid   bg="#F1EBE6"
+				<SimpleGrid   
 					columns={{
 						base: 1,
 						md: 2,
 						lg: 3,
 					}}
 					spacing={10}
-					w={"full"}
+					w="80%"
 				>
 					{products.map((product) => (
 						<ProductCard key={product._id} product={product} />
 					))}
 				</SimpleGrid>
+			
 				
 				{products.length === 0 && (
 					<Text fontSize='xl' textAlign={"center"} fontWeight='bold' color='gray.500'>
