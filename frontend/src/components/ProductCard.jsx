@@ -97,7 +97,7 @@ const ProductCard = ({ product }) => {
 			
 			
 		>
-			<Image src={product.image} alt={product.name} h='240' w='full' objectFit='cover'  onClick={onInfoOpen} />
+			<Image src={product.image} alt={product.name} h='300' w='full' objectFit='cover'  onClick={onInfoOpen} />
 
 			<Box p={2} onClick={onInfoOpen} >
 				<Heading as='h3' size='sm' align="center" color={textColor} mb={1} >
