@@ -10,13 +10,13 @@ import cakeData from "../data/cakeData.js"
 import cakeImage from "../utils/cakeImage.js"
 
 
-const HomePage = () => {
+const AboutUsPage = () => {
 	const logo_text = "Why Kasumi?\n\n\n\nKasumi (霞草) translates to Gypsophila (滿天星), which is a type of flower.\n\n I am particularly fond of the flower language associated with orange gypsophila.\n\n The flower language for Orange Gypsophila symbolizes a joyful, blessing and encouraging sentiment filled with warmth and positivity.\n\n Kasumi's mission is to spread this goodness to every patron."
 	return (
-		<Container maxW='container.xl' py={18}  >
+		<Container maxW='container.xl' >
 			<Navbar/>
 
-			<Flex pt='10' spacing={20} direction='row' >
+			<Flex pt='20' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
 			       <Text fontSize={{ base: "8px", lg: "20px" }} whiteSpace="pre-line" as='em' color="#834D1E">{logo_text}</Text>
 		        </Square>
@@ -61,4 +61,4 @@ const HomePage = () => {
 		</Container>
 	);
 };
-export default HomePage;
+export default AboutUsPage;

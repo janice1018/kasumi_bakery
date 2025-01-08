@@ -1,4 +1,4 @@
-import { Image, Container, VStack, SimpleGrid,Heading, HStack, Flex } from "@chakra-ui/react"
+import { Image, Container, VStack, SimpleGrid,Heading, Box, HStack, Flex } from "@chakra-ui/react"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Marquee from "react-fast-marquee";
@@ -7,13 +7,36 @@ import cakeImage from "../utils/cakeImage.js"
 import gallery_picture_1 from "/gallery_pictures/gallery_picture_1.jpg"
 import gallery_picture_2 from "/gallery_pictures/gallery_picture_2.jpg"
 import gallery_picture_3 from "/gallery_pictures/gallery_picture_3.jpg"
-import gallery_picture_4 from "/gallery_pictures/gallery_picture_4.jpg"
 import gallery_picture_5 from "/gallery_pictures/gallery_picture_5.jpg"
 import gallery_picture_6 from "/gallery_pictures/gallery_picture_6.jpg"
 import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
 
+import React from "react";
+import Slider from "react-slick";
+import Slick from "../components/Slick/Slick"
+
+const GalleryPage = () => {
+		
+				return (
+					<Container  maxW='container.xl' align="center">
+          				<Navbar />
+						     <Heading 
+								fontSize={{ base: "18", lg: "25" }}
+								bgGradient={"linear(to-r, #9D7252,  #834D1E)"}
+								bgClip={"text"}
+								pt={16}>
+									Gallery
+							</Heading>
+					        	<Box  pt={{ base: "2", lg: "6" }} bg="#FDF6E9" w='60%' align="center" >
+							       <Slick  />
+								</Box>
+						<Footer/>
+					</Container>
+				);
+};
 
 
+{/*
 const GalleryPage = () => {
   
 	return (
@@ -64,6 +87,6 @@ const GalleryPage = () => {
 	 </Container>
 	);
 };
-
+*/}
 export default GalleryPage;
 
