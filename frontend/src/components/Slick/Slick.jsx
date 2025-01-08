@@ -6,6 +6,10 @@ import gallery_picture_3 from "/gallery_pictures/gallery_picture_3.jpg"
 import gallery_picture_5 from "/gallery_pictures/gallery_picture_5.jpg"
 import gallery_picture_6 from "/gallery_pictures/gallery_picture_6.jpg"
 import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg"
+import gallery_picture_8 from "/gallery_pictures/gallery_picture_8.jpg"
+import gallery_picture_9 from "/gallery_pictures/gallery_picture_9.jpg"
+import gallery_picture_10 from "/gallery_pictures/gallery_picture_10.jpg"
+
 
 function Slick(){
 
@@ -23,25 +27,31 @@ function Slick(){
         
             <Slider {...settings}>
                 <div>
-                    <img 
-                    src={gallery_picture_1}
-                    width="80%"
-                    />
+                     <img src={gallery_picture_5} width="80%" />
                 </div>
                 <div>
-                    <h1><img src={gallery_picture_2}   width="80%" /></h1>
+                    <img src={gallery_picture_6} width="80%" />
                 </div>
                 <div>
-                    <h1><img src={gallery_picture_3}  width="80%" /></h1>
+                   <img src={gallery_picture_10} width="80%" />
                 </div>
                 <div>
-                    <h1><img src={gallery_picture_5}  width="80%" /></h1>
+                   <img src={gallery_picture_8} width="80%" />
                 </div>
                 <div>
-                    <h1><img src={gallery_picture_6}  width="80%" /></h1>
+                     <img src={gallery_picture_1} width="80%"/>
                 </div>
                 <div>
-                    <h1><img src={gallery_picture_7}  width="80%" /></h1>
+                    <img src={gallery_picture_2} width="80%" />
+                </div>
+                <div>
+                    <img src={gallery_picture_9} width="80%" />
+                </div>
+                <div>
+                    <img src={gallery_picture_7} width="80%" />
+                </div>
+                <div>
+                    <img src={gallery_picture_3} width="80%" />
                 </div>
             </Slider>
     );

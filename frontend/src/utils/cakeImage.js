@@ -7,7 +7,7 @@ import matcha_cake2 from "/cake_pictures/matcha_cake2.jpg";
 import pandan_coconut_cake from "/cake_pictures/pandan_coconut_cake.jpg";
 import strawberry_cake from "/cake_pictures/strawberry_cake.jpeg";
 import matcha_slice from "/cake_pictures/matcha_slice.jpg";
-import logo from "../images/main_logo.jpg";
+import logo from "/main_logo.jpg";
 
 
 const cakeImage = (cake) => {

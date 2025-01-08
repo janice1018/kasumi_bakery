@@ -26,9 +26,6 @@ const HomePage = () => {
 		<Container maxW='container.xl' >
           <Navbar/>
 			<VStack spacing={5} pt={20} >
-			    
-			
-				
 				<Text
 					textDecorationColor="#9D7252"
 					fontSize={{ base:"20", lg:"28"}}

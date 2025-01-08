@@ -2,7 +2,7 @@ import { Avatar, Center, Container, Heading, SimpleGrid, Text, Flex, HStack, VSt
 import new_strawberry from "/cake_pictures/new_strawberry.jpg"
 import { RiImageCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import logo from "../images/main_logo.jpg";
+import logo from "/main_logo.jpg";
 import Marquee from "react-fast-marquee";
 import cakeData from "../data/cakeData.js"
 import cakeImage from "../utils/cakeImage.js"
