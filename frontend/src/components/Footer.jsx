@@ -1,4 +1,4 @@
-import { Container, VStack, Box, Flex, Icon, Stack, Image, SimpleGrid, Button, Text, StackDivider} from '@chakra-ui/react'
+import { Container, VStack, HStack, Box, Flex, Icon, Stack, Image, SimpleGrid, Avatar, Center, Button, Text, StackDivider} from '@chakra-ui/react'
 import { SlSocialInstagram } from "react-icons/sl";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -7,78 +7,80 @@ import logo from "../images/main_logo.jpg";
 
 
 const Footer = () => (
-    <Container maxW={"10xl"} px={2} >
-      <SimpleGrid
-        borderTopWidth={2}
-        mt="60px"
-        borderTopColor="#834D1E"
-        pt="20px"
-      >
+        <Container maxW='container.6xl' pt="20"  >
+            <Flex  alignContent={"center"} justifyContent={"center"} h={{ base: "10", lg: "20" }}>
+                  <Center>
+                      <Link to={"/"}>   
+                            <Avatar position="relative" 
+                                    top={{ base: "1em", lg: "1em" }} 
+                                    src={logo} 
+                                    boxSize={{ base: "80px", lg: "140px" }}                  
+                                    borderRadius="full"
+                                    alt="logo"/>		
+                      </Link>
+                   </Center>
+            </Flex>	
 
-        <Link to={"/"}>   
-        <Image src={logo} 
-						boxSize={{ base: "100px", lg: "120px" }}
-						borderRadius="full"
-						fit="cover"
-						display={"block"}
-						margin={"auto"}
-						alt="Bake Your Day Instagram"
-						/>  
-        </Link>
   
          <Flex
               alignItems={"center"}
               justifyContent={"space-between"}
-              flexDir='column'>
+              flexDir='column'
+              padding='8'
+              bg='#F2EEE8' 
+              >
 
-        <VStack padding='10' 
+        <HStack  
                 maxW={"1140px"} 
-                divider={<StackDivider borderColor='gray.200' />}
-                align='stretch'
-                pt='10'>
+                divider={<StackDivider borderColor="#E5D7CC" />}
+                align='center'
+                pt={{ base: "4", lg: "1" }}
+                spacing={{ base: "-10px", lg: "20px" }}
+             
+                >
          
               <Link to={"/menu"}>
-                <Button color="#834D1E" variant="Subtle" >
-                  ♥︎ Menu 
+                <Button color="#834D1E" variant="Subtle" fontSize={{ base: "10", lg: "14" }} >
+                  Menu 
                 </Button>
               </Link>
 
             
              <Link to={"/gallery"}>
              
-                <Button color="#834D1E" variant="Subtle" >
-                  ♥︎ Gallery
+                <Button color="#834D1E" variant="Subtle" fontSize={{ base: "10", lg: "14" }}>
+                  Gallery
                 </Button>
                 </Link>
 
             
                 <Link to={"/aboutus"}>
-                  <Button color="#834D1E" variant="Subtle">
-                    ♥︎ About Us  
+                  <Button color="#834D1E" variant="Subtle" fontSize={{ base: "10", lg: "14" }} >
+                    About Us  
                   </Button>
                 </Link>
        
 
            
                 <Link to={"/contactus"}> 
-                <Button color="#834D1E" variant="Subtle">
-                  ♥︎ Contact Us
+                <Button color="#834D1E" variant="Subtle" fontSize={{ base: "10", lg: "14" }} >
+                  Contact Us
                 </Button>
                 </Link>
           
 
           
              <Link to={"https://www.instagram.com/kasumi.uk/"}>
-                <Button color="#834D1E" variant="solid">
-                  <AiFillInstagram fontSize={20}  />
-                  kasumi.uk  
+                <Button color="#834D1E" variant="Subtle" fontSize={{ base: "10", lg: "14" }} >
+                kasumi.uk 
+                  <AiFillInstagram /> 
                 </Button>
                 </Link>
           
         
-        </VStack>
+        </HStack>
         </Flex>
-      </SimpleGrid>
+   
     </Container>
 );
 

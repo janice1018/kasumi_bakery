@@ -18,7 +18,7 @@ const ContactUsPage = () => {
 		<Container maxW='container.xl' py={18} color="#834D1E" >
 			<Navbar/>
 
-			<Flex pt='10' spacing={20} direction='row' >
+			<Flex pt='20' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
 			       <Text fontSize={{ base: "15px", lg: "30px" }} whiteSpace="pre-line" >
 					  {logo_text}

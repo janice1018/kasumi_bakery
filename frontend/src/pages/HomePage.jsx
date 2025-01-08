@@ -7,6 +7,7 @@ import Marquee from "react-fast-marquee";
 import cakeData from "../data/cakeData.js"
 import cakeImage from "../utils/cakeImage.js"
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const HomePage = () => {
@@ -14,12 +15,12 @@ const HomePage = () => {
 
     return (
 		
-        <Container maxW='container.xl' >
+        <Container maxW='container.6xl'  >
 
 			<Flex bg='#F2EEE8' alignContent={"center"} justifyContent={"center"}>
 		        <Center>
                     <Link to={"/"}>   
-						<Avatar position="relative" top="5em" src={logo} boxSize={{ base: "150px", lg: "280px" }}
+						<Avatar position="relative" top={{ base: "3em", lg: "4em" }} src={logo} boxSize={{ base: "120px", lg: "180px" }}
 									borderRadius="full"
 									alt="logo"
                         />		
@@ -29,7 +30,7 @@ const HomePage = () => {
 			<Link to={"/menu"}>
 			    <Flex pt={{ base: "40", lg: "40" }} spacing={20} direction='row'  >
 					<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }} >
-					<Text fontSize={{ base: "30px", lg: "80px" }} whiteSpace="pre-line" as='em'>{logo_text}</Text>
+					<Text fontSize={{ base: "26px", lg: "80px" }} color="#834D1E" whiteSpace="pre-line" as='em'>{logo_text}</Text>
 					</Square>
 
 					<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>  
@@ -42,17 +43,18 @@ const HomePage = () => {
 				
 				divider={<StackDivider borderColor='gray.800' />}
 				alignContent={"center"} justifyContent={"center"}
-				pt='50'
-				pb='20'
+				pt='10'
+				pb='0'
 				>
 				<Center>
 				   <Link to={"/menu"}>
-						<Button variant="outline">  
+						<Button variant="outline" color="#834D1E">  
 						♥︎  Shop Now
 						</Button>
 					</Link>
 					</Center>
 			</VStack>
+			<Footer/>
 		</Container>
 	);
 };
