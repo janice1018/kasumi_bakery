@@ -18,7 +18,7 @@ const AboutUsPage = () => {
 
 			<Flex pt='20' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
-			       <Text fontSize={{ base: "8px", lg: "20px" }} whiteSpace="pre-line" as='em' color="#834D1E">{logo_text}</Text>
+			       <Text fontSize={{ base: "8px", lg: "20px" }} whiteSpace="pre-line" color="#834D1E">{logo_text}</Text>
 		        </Square>
 
 				<Square flex='1' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>

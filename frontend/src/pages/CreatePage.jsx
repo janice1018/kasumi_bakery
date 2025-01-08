@@ -40,7 +40,7 @@ const CreatePage = () => {
     <Container maxW={"container.lg"}>
       <Navbar/>
       <VStack spacing={8}>
-        <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8} padding='10'>
+        <Heading as={"h1"} size={"2x1"} textAlign={"center"} mb={8} padding='10' pb="0">
           Create New Product
         </Heading>
 

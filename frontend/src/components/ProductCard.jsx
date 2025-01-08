@@ -20,9 +20,15 @@ import {
 	useToast,
 	VStack,
 } from "@chakra-ui/react";
-import { SlInfo } from "react-icons/sl";
+
 import { useProductStore } from "../store/product";
 import { useState } from "react";
+import { FiInfo } from "react-icons/fi";
+import '@fontsource/yeseva-one';
+
+
+
+
 
 
 
@@ -88,23 +94,25 @@ const ProductCard = ({ product }) => {
 			overflow='hidden'
 			transition='all 0.3s'
 			_hover={{ transform: "translateY(-5px)", shadow: "xl" }}
-			bg={bg}
+			
+			
 		>
-			<Image src={product.image} alt={product.name} h='80' w='full' objectFit='cover' />
+			<Image src={product.image} alt={product.name} h='240' w='full' objectFit='cover'  onClick={onInfoOpen} />
 
-			<Box p={4}>
-				<Heading as='h3' size='md' color={textColor} mb={1} >
+			<Box p={2} onClick={onInfoOpen} >
+				<Heading as='h3' size='sm' align="center" color={textColor} mb={1} >
 					{product.name}
 				</Heading>
 
-				<Text fontWeight='6' fontSize='s' color={textColor} mb={1}>
+				<Text  fontSize='sm' align="center" color={textColor} fontFamily={"'Yeseva One', system-ui;"} >
                    £{product.price}
 				</Text>
 
-				<HStack spacing={2}>
-					<IconButton icon={<SlInfo />} onClick={onInfoOpen} colorScheme="yellow" />
-					
-				</HStack>
+				<VStack align="center" >
+					<Button variant="subtle"  > 
+					<IconButton icon={<FiInfo />} size="lg" variant="subtle"  onClick={onInfoOpen}  color="#834D1E" />
+					</Button>
+				</VStack>
 			</Box>
 
 			{/* update product modal*/}
