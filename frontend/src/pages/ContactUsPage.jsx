@@ -20,14 +20,13 @@ const ContactUsPage = () => {
 
 			<Flex pt='20' spacing={20} direction='row' >
 				<Square flex='2' bg='#F2EEE8' size={{ base: "250px", lg: "550px" }}>
-			       <Text fontSize={{ base: "15px", lg: "30px" }} whiteSpace="pre-line" >
+			       <Text fontSize={{ base: "10px", lg: "25px" }} whiteSpace="pre-line" >
 					  {logo_text}
 						<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
-						    <Button size={{ base: "sm", lg: "lg" }}  variant='subtle' > 
+						    <Button size={{ base: "xs", lg: "lg" }}  variant='subtle' > 
 							   <GrInstagram />
 						    </Button> 
 							Instagram: kasumi.uk
-							
 						</a>
 					</Text>
 						

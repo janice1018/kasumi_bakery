@@ -37,7 +37,6 @@ const ProductCard = ({ product }) => {
 	const [updatedProduct, setUpdatedProduct] = useState(product);
 
 	const textColor = useColorModeValue("#834D1E");
-	const bg = useColorModeValue("white", "gray.800");
 
 	const { deleteProduct, updateProduct } = useProductStore();
 	const toast = useToast();
@@ -180,11 +179,11 @@ const ProductCard = ({ product }) => {
 
 
 			{/* more info modal*/}
-			<Modal isOpen={isInfoOpen} onClose={onInfoClose}>
+			<Modal isOpen={isInfoOpen} onClose={onInfoClose} >
 				
-			  <ModalOverlay />
-			  <ModalContent>
-				<ModalHeader color={textColor} align='center' >♥︎ Information ♥︎</ModalHeader>
+			  <ModalOverlay  />
+			  <ModalContent  bg="#FCF9F3">
+				<ModalHeader color={textColor} align='center' > Information </ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>
 					
@@ -192,7 +191,7 @@ const ProductCard = ({ product }) => {
 					
 				    <Image src={product.image} alt={product.name} h='full' w='full'
 					       objectFit='cover'  border="2px" borderColor="#9D7252" rounded="d" />
-					<Text  fontSize='l' align='center' color={textColor} > ♥︎ {product.name} ♥︎</Text>
+					<Text  fontSize='l' align='center' color={textColor} > ⋆ {product.name} ⋆ </Text>
 					<Text fontSize='xs' align='center' color={textColor}> {product.info}</Text>
 					<Text fontSize='xs' color={textColor}>Allergens: {product.allergens}</Text>
 					<Text fontSize='xs' color={textColor}>Size: {product.productSize}</Text>
@@ -201,8 +200,8 @@ const ProductCard = ({ product }) => {
 				</ModalBody>
 	  
 				<ModalFooter>
-				  <Button colorScheme='yellow' mr={3} onClick={onInfoClose}>
-					Close
+				  <Button color='#834D1E' mr={1} onClick={onInfoClose} fontSize='xs'>
+					Back to Menu
 				  </Button>
 				</ModalFooter>
 			  </ModalContent>
