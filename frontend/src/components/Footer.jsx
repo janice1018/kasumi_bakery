@@ -12,7 +12,7 @@ const Footer = () => (
                   <Center>
                       <Link to={"/"}>   
                             <Avatar position="relative" 
-                                    top={{ base: "1em", lg: "1em" }} 
+                                    top={{ base: "0em", lg: "1em" }} 
                                     src={logo} 
                                     boxSize={{ base: "80px", lg: "140px" }}                  
                                     borderRadius="full"
@@ -26,16 +26,16 @@ const Footer = () => (
               alignItems={"center"}
               justifyContent={"space-between"}
               flexDir='column'
-              padding={{ base: "0", lg: "8" }}
+              padding={{ base: "1", lg: "8" }}
               bg='#F2EEE8' 
               borderRadius="md"
               >
 
         <HStack  
                 maxW={"1140px"} 
-                divider={<StackDivider borderColor="#E5D7CC" />}
+                divider={<StackDivider borderColor="#E5D7CC" h={{ base: "8", lg: "10" }} />}
                 align='center'
-                pt={{ base: "4", lg: "1" }}
+                pt={{ base: "2", lg: "1" }}
                 spacing={{ base: "-10px", lg: "20px" }}
              
                 >
