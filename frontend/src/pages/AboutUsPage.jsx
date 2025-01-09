@@ -33,10 +33,11 @@ const AboutUsPage = () => {
 				pt='50'>
 			</VStack>
 
-			<Flex  spacing={20} bg="#FCF9F3" >
+			<Flex pt="8" bg="#FCF9F3" >
 			    <Marquee 
-						gradient={{base: 'false', md: 'true', lg: 'true'}} 
-						speed={40}
+						gradient={{base: 'true', md: 'true', lg: 'true'}} 
+						gradientColor="#FCF9F3"
+						speed={35}
 						pauseOnHover={true} 
 						pauseOnClick={true} 
   					    delay={0} 
@@ -48,7 +49,7 @@ const AboutUsPage = () => {
 				         {cakeData.map((cake, id) => (
 
 					    <Image key={id} src={cakeImage(cake)} 
-							boxSize={{ base: "100px", lg: "160px" }}
+							boxSize={{ base: "80px", lg: "140px" }}
 							borderRadius="full"
 							fit="cover"
 							display={"block"}
