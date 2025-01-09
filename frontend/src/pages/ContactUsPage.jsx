@@ -13,7 +13,7 @@ import { GrInstagram } from "react-icons/gr";
 
 
 const ContactUsPage = () => {
-	const logo_text = "♥︎Contact Us:\n\n"
+	const logo_text = "♥︎Contact Us:\n\nInstagram: kasumi.uk"
 	return (
 		<Container maxW='container.xl' py={18} color="#834D1E" >
 			<Navbar/>
@@ -24,9 +24,10 @@ const ContactUsPage = () => {
 					  {logo_text}
 						<a href = 'https://www.instagram.com/kasumi.uk/' rel = "website" target = "_blank" >
 						    <Button size={{ base: "xs", lg: "lg" }}  variant='subtle' > 
+								
 							   <GrInstagram />
 						    </Button> 
-							Instagram: kasumi.uk
+							
 						</a>
 					</Text>
 						

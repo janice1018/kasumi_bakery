@@ -111,6 +111,7 @@ const ProductCard = ({ product }) => {
 					<Button variant="subtle"  > 
 					<IconButton icon={<FiInfo />} size="lg" variant="subtle"  onClick={onInfoOpen}  color="#834D1E" />
 					</Button>
+					
 				</VStack>
 			</Box>
 
@@ -200,7 +201,7 @@ const ProductCard = ({ product }) => {
 				</ModalBody>
 	  
 				<ModalFooter>
-				  <Button color='#834D1E' mr={1} onClick={onInfoClose} fontSize='xs'>
+				  <Button color='#9D7252'  mr={1} onClick={onInfoClose} fontSize='xs'>
 					Back to Menu
 				  </Button>
 				</ModalFooter>
