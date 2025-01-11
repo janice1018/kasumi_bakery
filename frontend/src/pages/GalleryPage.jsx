@@ -1,16 +1,6 @@
-import {
-  Container,
-  VStack,
-  SimpleGrid,
-  Heading,
-  Text,
-  Box,
-  HStack,
-  Flex,
-} from "@chakra-ui/react";
+import { Container, Text, Box } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Slider from "react-slick";
 import Slick from "../components/Slick/Slick";
 
 const GalleryPage = () => {

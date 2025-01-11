@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useProductStore } from "../store/product";
-import { set } from "mongoose";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState } from "react";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import "./BackToTop.css";
 

@@ -1,21 +1,13 @@
 import {
   Container,
-  Heading,
-  SimpleGrid,
   Text,
   Flex,
-  HStack,
   VStack,
-  Box,
   Image,
   Square,
-  Button,
   StackDivider,
 } from "@chakra-ui/react";
 import orange_flower from "/orange_flower.jpg";
-import { RiImageCircleLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import logo from "/main_logo.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Marquee from "react-fast-marquee";

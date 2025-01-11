@@ -1,21 +1,14 @@
 import {
   Container,
-  Heading,
-  SimpleGrid,
   Text,
   Flex,
-  HStack,
   VStack,
-  Box,
   Image,
   Square,
   Button,
   StackDivider,
 } from "@chakra-ui/react";
 import cakeroll from "/cake_pictures/cake_roll.jpg";
-import { RiImageCircleLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import logo from "/main_logo.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GrInstagram } from "react-icons/gr";
@@ -32,7 +25,7 @@ const ContactUsPage = () => {
             {logo_text}
             <a
               href="https://www.instagram.com/kasumi.uk/"
-              rel="website"
+              rel="website noreferrer"
               target="_blank"
             >
               <Button size={{ base: "xs", lg: "lg" }} variant="subtle">

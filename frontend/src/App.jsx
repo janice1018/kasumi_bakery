@@ -1,4 +1,4 @@
-import { Box, useColorModeValue } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Route, Routes } from "react-router-dom";
 
 import MenuPage from "./pages/MenuPage";

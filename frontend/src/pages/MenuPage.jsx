@@ -1,11 +1,4 @@
-import {
-  Container,
-  SimpleGrid,
-  Text,
-  VStack,
-  Box,
-  Image,
-} from "@chakra-ui/react";
+import { Container, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
@@ -24,7 +17,6 @@ const HomePage = () => {
   products.sort(function (x, y) {
     return new Date(x.updatedAt) < new Date(y.updatedAt) ? 1 : -1;
   });
-  const menu_text = "📍Birmingham UK \n\n⋆  Japanese style cakes  ⋆";
   return (
     <Container maxW="container.xl">
       <Navbar />
