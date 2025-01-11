@@ -2,24 +2,17 @@ import {
   Avatar,
   Center,
   Container,
-  Heading,
-  SimpleGrid,
   Text,
   Flex,
-  HStack,
   VStack,
-  Box,
   Image,
   Square,
   Button,
   StackDivider,
 } from "@chakra-ui/react";
 import new_strawberry from "/cake_pictures/new_strawberry.jpg";
-import { RiImageCircleLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import logo from "/main_logo.jpg";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import "@fontsource-variable/playwrite-be-wal";
 
 const HomePage = () => {

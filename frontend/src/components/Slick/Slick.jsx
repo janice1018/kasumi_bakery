@@ -1,4 +1,3 @@
-import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import gallery_picture_1 from "/gallery_pictures/gallery_picture_1.jpg";
 import gallery_picture_2 from "/gallery_pictures/gallery_picture_2.jpg";

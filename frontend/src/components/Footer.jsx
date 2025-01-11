@@ -1,20 +1,12 @@
 import {
   Container,
-  VStack,
   HStack,
-  Box,
   Flex,
-  Icon,
-  Stack,
-  Image,
-  SimpleGrid,
   Avatar,
   Center,
   Button,
-  Text,
   StackDivider,
 } from "@chakra-ui/react";
-import { SlSocialInstagram } from "react-icons/sl";
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
 

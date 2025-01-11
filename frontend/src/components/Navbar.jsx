@@ -5,21 +5,12 @@ import {
   Container,
   Flex,
   HStack,
-  Text,
-  useColorMode,
-  Image,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-
-import { RiHeartAdd2Line } from "react-icons/ri";
 import logo from "/main_logo.jpg";
-
-import { RiImageCircleLine } from "react-icons/ri";
 import { GrInstagram } from "react-icons/gr";
 
 const Navbar = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-
   return (
     <Container maxW="container.6xl" padding={0}>
       <Flex
@@ -100,7 +91,7 @@ const Navbar = () => {
 
           <a
             href="https://www.instagram.com/kasumi.uk/"
-            rel="website"
+            rel="website noreferrer"
             target="_blank"
           >
             <Button
