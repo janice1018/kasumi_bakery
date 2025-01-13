@@ -17,7 +17,7 @@ const Footer = () => (
     <Flex
       alignContent={"center"}
       justifyContent={"center"}
-      h={{ base: "10", lg: "20" }}
+      h={{ base: "6", lg: "20" }}
     >
       <Center>
         <Link to={"/"}>
@@ -25,7 +25,7 @@ const Footer = () => (
             position="relative"
             top={{ base: "0em", lg: "1em" }}
             src={logo}
-            boxSize={{ base: "80px", lg: "140px" }}
+            boxSize={{ base: "0px", lg: "100px" }}
             borderRadius="full"
             alt="logo"
           />
