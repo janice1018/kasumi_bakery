@@ -8,6 +8,7 @@ import gallery_picture_7 from "/gallery_pictures/gallery_picture_7.jpg";
 import gallery_picture_8 from "/gallery_pictures/gallery_picture_8.jpg";
 import gallery_picture_9 from "/gallery_pictures/gallery_picture_9.jpg";
 import gallery_picture_10 from "/gallery_pictures/gallery_picture_10.jpg";
+import "./Slick.css";
 
 function Slick() {
   const settings = {
