@@ -90,14 +90,14 @@ const Footer = () => (
           </Button>
         </Link>
 
-        <Link to={"https://www.instagram.com/kasumi.uk/"}>
+        <Link to={"https://www.instagram.com/kasumi.bakery/"}>
           <Button
             color="#834D1E"
             variant="Subtle"
             fontSize={{ base: "10", lg: "14" }}
           >
             <AiFillInstagram />
-            kasumi.uk
+            kasumi.bakery
           </Button>
         </Link>
       </HStack>
@@ -105,4 +105,4 @@ const Footer = () => (
   </Container>
 );
 
-export default Footer;
+export default Footer

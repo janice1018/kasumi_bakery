@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 import { GrInstagram } from "react-icons/gr";
 
 const ContactUsPage = () => {
-  const logo_text = "♥︎Contact Us:\n\nInstagram: kasumi.uk";
+  const logo_text = "♥︎Contact Us:\n\nInstagram: kasumi.bakery";
   return (
     <Container maxW="container.xl" color="#834D1E">
       <Navbar />
@@ -24,7 +24,7 @@ const ContactUsPage = () => {
           <Text fontSize={{ base: "10px", lg: "25px" }} whiteSpace="pre-line">
             {logo_text}
             <a
-              href="https://www.instagram.com/kasumi.uk/"
+              href="https://www.instagram.com/kasumi.bakery/"
               rel="website noreferrer"
               target="_blank"
             >

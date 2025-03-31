@@ -90,7 +90,7 @@ const Navbar = () => {
           </Link>
 
           <a
-            href="https://www.instagram.com/kasumi.uk/"
+            href="https://www.instagram.com/kasumi.bakery/"
             rel="website noreferrer"
             target="_blank"
           >
