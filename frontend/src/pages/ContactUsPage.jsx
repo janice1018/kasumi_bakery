@@ -14,7 +14,9 @@ import Footer from "../components/Footer";
 import { GrInstagram } from "react-icons/gr";
 
 const ContactUsPage = () => {
-  const logo_text = "♥︎Contact Us:\n\nInstagram: kasumi.bakery";
+  const logo_text = "Contact Us:\n\nInstagram: kasumi.bakery";
+  const order_msg = " \n\nOrder Process: \n\n  1. Instagram DM \n 2. Place order + Pay deposit \n 3. Self pick up / Delivery (fee) \n\n" ;
+  const order_msg2 = " *Orders should be made 5 days in advance \n *Urgent orders are subject to availability"
   return (
     <Container maxW="container.xl" color="#834D1E">
       <Navbar />
@@ -32,7 +34,17 @@ const ContactUsPage = () => {
                 <GrInstagram />
               </Button>
             </a>
+
+              <Text fontSize={{ base: "9px", lg: "20px" }} >
+              {order_msg}
+              </Text>
+
+              <Text fontSize={{ base: "7px", lg: "16px" }} >
+              {order_msg2}
+              </Text>
           </Text>
+
+          
         </Square>
 
         <Square flex="1" bg="#F2EEE8" size={{ base: "250px", lg: "550px" }}>
